@@ -7,6 +7,7 @@ import SignIn from "./pages/SignIn";
 import SignOut from "./pages/SignOut";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
+import Header from "./components/Header";
 
 const router=createBrowserRouter([
   {
@@ -34,7 +35,10 @@ const router=createBrowserRouter([
 
 const App = () => {
   return (
+    <>
+    <Header/>
     <RouterProvider router={router}/>
+    </>
   )
 }
 
